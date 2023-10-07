@@ -7,7 +7,7 @@ document.getElementById('container').appendChild(renderer.domElement);
 
 // Create a 3D Earth model
 const loader = new THREE.GLTFLoader();
-loader.load('your-earth-model.glb', (gltf) => {
+loader.load('earth', (gltf) => {
     const earth = gltf.scene;
     scene.add(earth);
 });
